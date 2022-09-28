@@ -18,7 +18,7 @@ const Controls = () => {
   const [state, dispatch] = useStateValue();
 
   const clockValue = useClock();
-  const beepSound = "../files/beep.wav";
+  const beepSound = "https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3";
   const audioSoundRef = useRef();
 
   const handleReset = () => {
