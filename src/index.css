@@ -1,13 +1,137 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat&display=swap');
+
+:root {
+  --clr-white: #fff;
+  --text-primary: #232429;
+
+  --gray-50: #f1f3f8;
+  --gray-100: #e8e9ee;
+  --gray-200: #d3d4d9;
+  --gray-300: #bcbdc2;
+  --gray-400: #a6a7ab;
+  --gray-500: #919297;
+  --gray-600: #7a7b7f;
+  --gray-700: #65666c;
+  --gray-800: #4e4f55;
+  --gray-900: #3a3b40;
+
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+html {
+  margin: 0 auto;
+}
+body {
+  background: url('./files/background.jpg') center/cover no-repeat;
+  min-height: 90vh;
+  font-family: 'Montserrat', sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.timer {
+  width: 500px;
+  color: var(--gray-100);
+  background-color: var(--gray-800);
+  margin: auto;
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--dark-shadow);
+  text-align: center;
+}
+
+.main-clock {
+  background-color: #e53935;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 2.5rem 2rem;
+  box-shadow: var(--light-shadow);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  color: var(--gray-300);
+}
+
+#reset, #start-stop {
+  background-color: var(--gray-900);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding-top: 5px ;
+  padding-left: 5px;
+  margin: 10px;
+  box-shadow: var(--light-shadow);
+}
+
+#reset {
+  padding-left: 0;
+}
+
+.session-controls {
+  margin-top: 1rem;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.logo img {
+  width: 70px;
+}
+.title {
+  font-family: 'Comfortaa', cursive;
+}
+
+.timer-left {
+  background-color: var(--gray-700);
+  padding: 2rem;
+}
+
+.timer-controllers, .break-controls, .session-controls {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #e53935;
+  color: var(--gray-200);
+  padding: 1rem;
+  border-radius: var(--radius);
+  width: 100%;
+}
+.created {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.signature {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
