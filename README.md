@@ -1,3 +1,7 @@
+# Build a 25 + 5 Clock - freeCodeCamp
+
+This projects was from freeCodeCamp Front End Development Libraries Projects. The task was to build a 25 + 5 Clock, also known as Pomodoro Clock. For the solution I was using multiple react hooks.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
